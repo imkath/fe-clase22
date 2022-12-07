@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/anadir.css">
+  <title>Clase 16</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <a href="http://">
+        20% de descuento en todos los productos!
+      </a>
+    </div>
+    <div class="header-bottom">
+      <a href="./">
+        <img src="./img/Logo.png" alt="">
+        <h1>Nombre Tienda</h1>
+      </a>
+    </div>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="./">Contacto</a></li>
+        <li><a href="./registrarse.html">Registrarse</a></li>
+        <li><a href="./ingresar.html">Ingresar</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form action="">
+      <h2>Añadí tu super!</h2>
+
+      <div class="container">
+        <fieldset class="fieldset-top">
+          <legend>Agregá tu personaje favorito completando las opciones.</legend>
+
+          <div class="group-input">
+            <label for="name">*Nombre</label>
+            <input type="text" id="name" name="nombre" required>
+          </div>
+
+          <div class="group-input">
+            <label for="species">*Especies</label>
+            <select id="species" name="especie" required>
+              <option value="">Especies</option>
+            </select>
+          </div>
+
+          <div class="group-input">
+            <label for="date">Fecha</label>
+            <input type="date" id="date" name="fecha" required>
+          </div>
+
+          <div class="group-input">
+            <label for="photo">Agregar Foto</label>
+            <input type="file" id="photo" name="foto" required>
+          </div>
+
+        </fieldset>
+
+        <div class="content-form-bottom">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
+          <div class="group-fieldset">
+            <fieldset class="fieldset-1">
+              <legend>Poderes</legend>
+              <div class="group-input">
+                <label for="fly">
+                  Volar
+                </label>
+                <input type="checkbox" name="poderes" id="fly" value="volar">
+              </div>
+              <div class="group-input">
+                <label for="iq">
+                  Superinteligencia
+                </label>
+                <input type="checkbox" name="poderes" id="iq" value="superinteligencia">
+              </div>
+              <div class="group-input">
+                <label for="laser">
+                  Vista de rayo laser
+                </label>
+                <input type="checkbox" name="poderes" id="laser" value="laser">
+              </div>
+              <div class="group-input">
+                <label for="wallet">
+                  Billetera gorda
+                </label>
+                <input type="checkbox" name="poderes" id="wallet" value="billetera">
+              </div>
+            </fieldset>
+
+            <fieldset class="fieldset-2">
+              <legend>Tipo de personaje</legend>
+
+              <div class="group-input">
+                <label for="">Héroe/Heroina</label>
+                <input type="radio" name="" id="">
+              </div>
+              <div class="group-input">
+                <label for="">Villano/Villana</label>
+                <input type="radio" name="" id="">
+              </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit">Añadir</button>
+    </form>
+  </main>
+  <footer class="footer">
+    <p>Todos los derechos reservados a <span>front end 1</span></p>
+  </footer>
+</body>
+
+</html>

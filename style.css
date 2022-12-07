@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+/* Header */
+.header {
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+.header-top {
+  background-color: #1cd1b0;
+}
+.header-top a {
+  color: black;
+  padding: 0 2rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.header-bottom {
+  padding-left: 2rem;
+  background-color: #00669f;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.header-bottom a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.header-bottom img {
+  height: auto;
+  width: 80px;
+}
+.header-bottom h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+}
+.header .header-nav ul {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.header .header-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main */
+main {
+  background-color: white;
+}
+main .plus {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #00669f;
+  color: white;
+  font-size: 70px;
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  bottom: 40%;
+  right: 1rem;
+  z-index: 1;
+}
+main .cards {
+  list-style: none;
+  padding: 0;
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .cards .card {
+  width: 300px;
+  margin: 0 1rem;
+}
+main .cards .card .card-top {
+  position: relative;
+  width: 300px;
+  height: 193px;
+  border-radius: 16px 16px 0px 0px;
+}
+main .cards .card .card-top img.profile {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30%;
+  left: 30%;
+  width: 120px;
+  height: auto;
+}
+main .cards .card .card-top img.heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+main .cards .card .card-bottom {
+  width: 300px;
+  background-color: #f3f3f3;
+  padding: 3rem 1rem 1rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .cards .card .card-bottom h2 {
+  text-align: center;
+}
+main .cards .card .card-bottom p {
+  margin: 0;
+  text-align: left;
+}
+main .cards .card .card-bottom a {
+  background-color: #00669f;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  display: inline-block;
+  margin: 1rem auto 0.5rem;
+}
+main .cards .card.card-batman .card-top {
+  background-image: url("./img/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .cards .card.card-batman .card-bottom h2 {
+  text-transform: uppercase;
+}
+main .cards .card.card-maravilla .card-top {
+  background-image: url("./img/banner-mujer-maravilla.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .cards .card.card-superman .card-top {
+  background-image: url("./img/banner-superman.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main .cards .card.card-harley .card-top {
+  background-image: url("./img/banner-herley-quinn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #00669f;
+  height: 70px;
+  width: 100%;
+  padding: 0 2rem 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer p {
+  color: white;
+  text-align: end;
+}
+.footer p span {
+  text-transform: uppercase;
+}
+
+@media (max-width: 1328px) {
+  .header .header-bottom h1 {
+    font-size: 30px;
+  }
+  main .plus {
+    font-size: 60px;
+    width: 70px;
+    height: 70px;
+  }
+  main .cards .card {
+    margin: 1rem;
+  }
+  .footer {
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer p {
+    text-align: center;
+    width: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

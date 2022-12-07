@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+/* Header */
+
+.header {
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+.header-top {
+  background-color: #1cd1b0;
+}
+
+.header-top a {
+  color: black;
+  padding: 0 2rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header-bottom {
+  padding-left: 2rem;
+  background-color: #00669f;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-bottom a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.header-bottom img {
+  height: auto;
+  width: 80px;
+}
+
+.header-bottom h1 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 40px;
+  color: white;
+}
+
+.header-nav ul {
+  padding: 0.5rem 1rem;
+  margin: 0;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main */
+
+form {
+  margin: 3rem auto;
+  background-color: #00669f;
+  color: white;
+  width: 60%;
+  border-radius: 25px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form h1 {
+  margin: 0 0 1rem;
+}
+
+form fieldset {
+  border: none;
+  padding: 0;
+  width: 70%;
+}
+
+form fieldset .group-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+form fieldset .group-input input {
+  border: 0;
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+form button {
+  margin-top: 1rem;
+  cursor: pointer;
+  border: 0;
+  background-color: #1cd1b0;
+  padding: 10px 50px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+form button:hover {
+  transition: all 600ms;
+  background-color: #001d2d;
+  color: white;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #00669f;
+  height: 70px;
+  width: 100%;
+  padding: 0 2rem 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer p {
+  color: white;
+  text-align: end;
+}
+
+.footer p span {
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  form fieldset {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1328px) {
+  .header-bottom h1 {
+    font-size: 30px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer p {
+    text-align: center;
+    width: auto;
+  }
+}
